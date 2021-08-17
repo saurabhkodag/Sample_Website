@@ -15,38 +15,64 @@
         padding-left: 20px;
     }
     .center{
-        width:25%;
+        width:80%;
+        height: 500px;
+        padding-left: 20px;
+    }
+    .right{
+        width:20%;
         height: 500px;
         background-color:#f5f5dc;
         padding-left: 20px;
     }
-    .right{
-        width:25%;
-        height: 500px;
-        background-color:#d7e8d4;
-        padding-left: 20px;
-    }
     h1{
         display: flex;
-        justify-content: center;
-        background-color: #9acd32;
+        flex-flow: row wrap;
+        text-align: right;
+        width: 100%;
+        background-color:#9acd32;
         height: 100px;
+        margin: 0px;
+    }
+    .Nav{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 700px;
+        background-color:#d7e8d4;
+    }
+    .remain{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+    }
+    .first{
+        display: flex;
     }
 </style>
 </head>
-<body>
-    <h1>Header</h1>
-    <div class="main">
-        <div class="left">
-            <h2>Article</h1>
-        </div>
-        <div class="center">
-            <h2>Aside</h1>
-        </div>
-        <div class="right">
-            <h2>Nav</h1>
-        </div>
+<body>  
+    <div class="first">
+    <div class="Nav">
+        <h2>Nav</h1>
     </div>
-    <h1>Footer</h1>
+    <div class="remain">
+        <div>
+        <h1>Header</h1>
+            </div>
+        <div class="main">
+            
+            <div class="center">
+                <h2>Article</h1>
+            </div>
+            <div class="right">
+                <h2>Aside</h1>
+            </div>
+            
+        </div>
+        <h1>Footer</h1>
+    </div>
+</div>
 </body>
 </html>
